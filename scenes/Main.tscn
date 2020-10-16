@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scenes/Level controller.gd" type="Script" id=1]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes/Camera2D.gd" type="Script" id=3]
 
 [node name="Main" type="Node"]
 
@@ -12,6 +11,7 @@ script = ExtResource( 1 )
 [node name="Player" parent="Level controller" instance=ExtResource( 2 )]
 
 [node name="Camera2D" type="Camera2D" parent="Level controller/Player"]
+current = true
 zoom = Vector2( 0.5, 0.5 )
 limit_left = 0
 limit_top = 0
@@ -23,4 +23,3 @@ drag_margin_top = 0.35
 drag_margin_bottom = 0.35
 editor_draw_limits = true
 editor_draw_drag_margin = true
-script = ExtResource( 3 )

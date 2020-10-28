@@ -12,18 +12,20 @@ a = Vector2( 0, -16 )
 b = Vector2( 0, 16 )
 
 [node name="Door" type="Area2D"]
+collision_mask = 0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 1, 0 )
+position = Vector2( 8, 0 )
 shape = SubResource( 1 )
 
 [node name="Door_Enabler" type="Area2D" parent="."]
+collision_mask = 0
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door_Enabler"]
-position = Vector2( 64, 0 )
+position = Vector2( 40, 0 )
 shape = SubResource( 2 )

@@ -12,6 +12,12 @@ export (Vector2) var destination_position
 func _ready():
 	add_to_group("doors") #consider setting persistent to true?
 
+func _enter_tree():
+	connect("body_entered", $"/root/Main/Level controller", "_on_door_entered", [self])
+
+func _exit_tree():
+	disconnect("body_entered", $"/root/Main/Level controller", "_on_door_entered")
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -16,10 +16,10 @@ spawn_position = Vector2( 256, 256 )
 [node name="Door" parent="." instance=ExtResource( 3 )]
 position = Vector2( -32, 272 )
 destination_level = 1
-destination_position = Vector2( 543, 256 )
+destination_position = Vector2( 543, 257 )
 
 [node name="Door2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 544, 272 )
 rotation = 3.14159
 destination_level = 3
-destination_position = Vector2( -31, 256 )
+destination_position = Vector2( -31, 257 )
